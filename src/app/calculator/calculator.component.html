@@ -1,0 +1,17 @@
+<div class="calculator">
+    <h2>Basic Calculator </h2>
+    
+    <input type="number" [(ngModel)]="model.num1" placeholder="Enter number 1">
+    <input type="number" [(ngModel)]="model.num2" placeholder="Enter number 2">
+    <textarea [(ngModel)]="model.result" readonly placeholder="Result will be displayed here"></textarea>
+    <div class="buttons">
+      <button (click)="calculate('add')">+</button>
+      <button (click)="calculate('subtract')">-</button><br>
+      <button (click)="calculate('multiply')">×</button>
+      <button (click)="calculate('divide')">÷</button>
+      <button (click)="calculate('mod')">%</button>
+    </div>
+  
+    
+  </div>
+  
